@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@1,300;1,400;1,500&display=swap');
+*{
+     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Alegreya Sans SC', sans-serif;
+     background-color: #222629;
+}
+
+header {
+    background-color: #97d83b;
+    color: aliceblue;
+    width: 100%;
+    height: 20%;
+}
+h1{
+    color: #222629;
+    margin-left: 5%;
+    padding: 5px;
+    display: inline-block;
+    font-size: 38px;    
+    user-select: none;
+}
+.navigator{
+    display: flex;
+    justify-content: center;
+}
+.navigator a{
+    position: relative;
+    font-size: 20px;
+    color: #222629;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+.navigator a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 24px;
+    width: 100%;
+    height: 3px;
+    background: #222629;
+    border-radius: 3px;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+.navigator a:hover::after{
+    transform: scaleX(1);
+    transition: transform .5s;
+    transform-origin: center;
+}
+#buy,#buy2,#buy3,#pets,#up{
+    display: flex;
+    cursor: pointer;
+    margin: -2% 0 0 2.5%;
+    user-select: none;
+    color: #222629;
+    font-size: 20px;
+    text-decoration: none;
+}
+#money{
+    text-align: center;
+	color: #6B6E70;
+	font-size: 30px;
+    margin-top: 3%;
+	user-select: none;
+}
+main{
+    height: 256px;
+	width: 270px;
+}
+#pole{
+    margin-top: 75% ;
+	margin-left: 835px;
+    height: 256px;
+	width: 256px;
+	background-image: url("img/moneta.PNG");
+}
+#message{
+    transition: opacity 0.3s linear, visibility 0.3s linear;
+    opacity: 0;
+    visibility: hidden;
+    user-select: none;
+}
+#magazin{
+    background-color:rgba(20, 19, 19, 0.664);
+    position: fixed;
+    top: 20%;
+    left: 18%;
+    bottom:15%;
+    width: 300px;
+    height: 718px;
+    transition: opacity 0.3s linear, visibility 0.3s linear;
+    opacity: 0;
+    visibility: hidden;
+    color: aliceblue;
+    font-size: 23px;
+    user-select: none;
+}
+#magazin img{
+    position: absolute;
+    border-radius: 100%;
+    left: 90%;
+    top: 1px;
+}
+#magazin div{
+    margin-top: 30px;
+}
+#magazinauto img{
+    position: absolute;
+    border-radius: 100%;
+    left: 90%;
+    top: 1px;
+}
+#magazinauto div{
+    margin-top: 30px;
+}
+#magazinauto{
+	background-color:rgba(20, 19, 19, 0.664);
+    position: fixed;
+    top: 20%;
+    left: 65%;
+    bottom:15%;
+    width: 300px;
+    height: 718px;
+    transition: opacity 0.3s linear, visibility 0.3s linear;
+    opacity: 0;
+    visibility: hidden;
+    color: aliceblue;
+    font-size: 23px;
+    user-select: none;
+}
+#color1, #color3, #color5, #color7{
+    background-color: #97d83b;
+    height: 70px;
+    cursor: pointer;
+}
+#color2,#color4,#color6{
+    cursor: pointer;
+    background-color: #222629;
+}
+#krest2{
+    border-radius: 100%;
+    position: absolute;
+    left: 94.5%;
+    top: 20px;
+    cursor: pointer;
+}
+#karta{
+	background-color: rgb(20, 19, 19);
+    border-radius: 10%;
+	position: absolute;
+    top: 190px;
+	left: 19%;
+	bottom:10%;
+	width: 1200px;
+	height: 700px;
+	transition: opacity 0.3s linear, visibility 0.3s linear;
+    opacity: 0;
+    visibility: hidden;
+}
+#karta1{
+    position: absolute;
+    right: 1px;
+    border-radius: 10%;
+}
+#dom1{
+    position: absolute;
+    left: 442px;
+    transition: 1s;
+}
+#dom1 img {
+    width: 400px;
+}
+#dom1:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+}
+#doma2{
+    position: absolute;
+    left: 4px;
+    top: 290px;
+    transition: 0.5s;
+}
+#doma2 img{
+    width: 620px;
+}
+#doma2:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+}
+#doma3{
+    position: absolute;
+    left: 670px;
+    top: 383px;
+    transition: 0.5s;
+}
+#doma3:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+}
+#doma4{
+    position: absolute;
+    top: 127px;
+    left: 235px;
+    transition: 0.5s;
+}
+#doma img{
+    width: 650px;
+}
+#doma4:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+}
+#doma5{
+    position: absolute;
+    top: 182px;
+    left: 722px;
+    transition: 0.5s;;
+}
+#doma5:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+}
+#keyis{
+    position: absolute;
+    width: 100%;
+    height: 790px;
+    background-color: #222629;
+    transition: opacity 0.3s linear, visibility 0.3s linear;
+    opacity: 0;
+    visibility: hidden;
+    color: #97d83b;
+    text-align: center;
+    font-size: 45px;
+}
+#krest3{
+    position: absolute;
+    left: 95.5%;
+}
+#moneta{
+    border-radius: 17px;
+}
+#blockKeyis{
+    position: absolute;
+    left: 27%;
+    margin-top: 5%;
+    background-color: rgb(88, 88, 88);
+    width: 900px;
+    height: 200px;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 40px 40px rgb(88, 88, 88) inset, 0 0 0 0 rgb(88, 88, 88);
+    transition: all 150ms ease-in-out;
+}
+#blockKeyis:hover{
+    box-shadow: 0 0 10px 0 rgb(176, 41, 185) inset, 0 0 10px 4px rgb(176, 41, 185);
+}
+#blockKeyis1{
+    position: absolute;
+    left: 27%;
+    margin-top: 20%;
+    background-color: rgb(88, 88, 88);
+    width: 900px;
+    height: 200px;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 40px 40px rgb(88, 88, 88) inset, 0 0 0 0 rgb(88, 88, 88);
+    transition: all 150ms ease-in-out;
+}
+#blockKeyis1:hover{
+    box-shadow: 0 0 10px 0 rgb(235, 25, 25) inset, 0 0 10px 4px rgb(235, 25, 25);
+}
+#text{
+    transition: 0.5s;
+    color: rgb(255, 255, 255);
+    margin-top: 7%;
+    text-align: center; 
+}
+#prise{
+    position: absolute;
+    top: 12%;
+    left: 30%;
+}
+#text1{
+    transition: 0.5s;
+    color:rgb(255, 255, 255);
+    margin-top: 7%;
+    text-align: center;
+}
+#prise1{
+    position: absolute;
+    top: 49%;
+    left: 30%;
+}
